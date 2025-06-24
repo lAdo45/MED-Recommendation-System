@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayurveda</title>
+
+<!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <link rel="stylesheet" href="/static/index.css">
+
+    <style>
+        .text-overlay {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 10px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .on-img {
+            position:absolute;
+            top:40%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .btn{
+            position:absolute;
+            top:50%;
+            left:45%;
+            transform: translate(-50%, -50%);
+            color:rgb(249, 247, 115);
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            gap: 10px;
+
+            background-color: rgb(249, 247, 115);  /* Yellow background */
+            color: darkgreen;          /* Dark green text */
+            border: none;              /* Remove default border */
+            padding: 8px 25px;        /* Adjust padding for oval shape */
+            border-radius: 45px;       /* Makes the button oval */          /* Adjust text size */
+            font-weight: bold;         /* Make text bold */
+            cursor: pointer;           /* Show pointer on hover */
+            transition: 0.3s;
+        }
+        .btn-1{
+            position:absolute;
+            top:50%;
+            left:57%;
+            transform: translate(-50%, -50%);
+            color: rgb(244, 237, 151);
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            gap: 10px;
+
+            background-color: rgb(249, 247, 115);  /* Yellow background */
+            color: darkgreen;          /* Dark green text */
+            border: none;              /* Remove default border */
+            padding: 8px 25px;        /* Adjust padding for oval shape */
+            border-radius: 45px;       /* Makes the button oval */
+            font-weight: bold;         /* Make text bold */
+            cursor: pointer;           /* Show pointer on hover */
+            transition: 0.3s;
+        }
+        aside {
+      width: 50%;
+      padding-left: 20px;
+      margin-left: 25px;
+      float: left;
+  border-radius: 8px;
+}
+
+        /* General Button Styling */
+button {
+    background-color: #00bfa5;  /* Teal green color */
+    color: white;  /* White text */
+    font-size: 18px;  /* Text size */
+    font-weight: bold;  /* Bold text */
+    padding: 12px 24px;  /* Top-bottom & left-right padding */
+    border: none;  /* Removes default border */
+    border-radius: 8px;  /* Rounded corners */
+    cursor: pointer;  /* Changes cursor to pointer */
+    text-transform: uppercase;  /* Makes text uppercase */
+    transition: all 0.3s ease-in-out;  /* Smooth transition effect */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  /* Soft shadow */
+}
+
+/* Hover Effect */
+button:hover {
+    background-color: #00897b;  /* Darker teal on hover */
+    transform: scale(1.05);  /* Slightly enlarges the button */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);  /* Stronger shadow */
+}
+
+/* Active Click Effect */
+button:active {
+    transform: scale(0.98);  /* Slightly shrinks when clicked */
+}
+
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="navdiv">
+        <div class="logo">MedRecommender</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="/login">LOGIN</a></li>
+        </ul>
+
+    </div>
+</nav>
+    <div>
+        <img src="\static\background.jpeg" height="350" width="1260">
+        <p class="text-overlay">MedRecommendation</p>
+        <p class="on-img">Ayurvedic Information System that helps you Connect with ancient remedies..</p>
+
+
+    </div>
+<br>
+<div class="box-container">
+<div class="box">
+<h5>Predicting Symptoms</h5>
+<p>Migraine, Gastric, Diarrhea & Arthritis <br>from symptoms.This personalized service empowers users to identify potential health issues and seek medical attention promptly, ultimately leading to better health outcomes.</p>
+</div>
+<div class="box">
+<h5>Recommending Ayurvedic Medicine</h5>
+<p> Our Ayurvedic medicine recommendation system suggests personalized, natural remedies based on individual symptoms. This brings traditional knowledge to the modern world,  offering a holistic approach to health that promotes well-being for all.</p>
+</div>
+</div>
+<br>
+<div class="ayurveda-info">
+    <h3>The Basic Principles of Ayurveda</h3>
+    <p>
+        There are three basic fundamental biological humours described by Ayurveda- The Vata, Pitta, and Kapha also called the “tri-energies”.
+        These are the ones who are totally controlling the universe and are responsible for planetary movements (Vata),
+        their formation and destruction (Pitta) and generation and maintenance of new life (Kapha).
+        Same tri-energies are found inside every living being and are responsible for health and disease.
+        Their balance is “health” or “harmony” whereas the imbalance is “disease” or “chaos”.
+        These govern all the processes in all levels of our life. Vata governs all movement, Pitta all heat and transformation, and Kapha all growth, structure, and lubrication.
+        Our diet, our behavior, the seasons, emotions, and our lifestyle all have an impact on the balance of tri-energies.
+        The main principle of healing in Ayurveda is to maintain the balance of Vata, Pitta, and Kapha by alteration in our lifestyle,
+        our thoughts, our diet, understanding nature, and through herbal medicines.
+    </p>
+</div>
+
+<aside>
+<div class="box-container1">
+    <h2>Learn more about MedRecommender</h2>
+    <p>Machine learning models are revolutionizing the field of Ayurvedic medicine by providing personalized and accurate disease predictions and natural remedies.
+These models use advanced algorithms and constantly updated medical research to offer a holistic approach to healthcare that empowers users to identify potential health issues and seek timely medical attention.
+Our Ayurvedic medicine recommendation systems bring traditional knowledge to the modern world, connecting users with certified practitioners and offering personalized holistic care that promotes optimal wellness for all.</p>
+
+</div>
+</aside>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="new">
+    <h2>Register Today for a Personalized Experience</h2>
+    <p>We are committed to providing our users with the most personalized and effective healthcare experience possible. To get started, simply register for our services, and gain access to our powerful disease prediction and Ayurvedic medicine recommendation systems. By inputting your symptoms and using our advanced machine learning algorithms, you can receive accurate and reliable disease predictions, and natural remedies that can be easily accessed from home.</p>
+    <button><a href="/register">REGISTER</a></button>
+</div>
+<h1><a href="/show_data">SHOW DATA</a></h1>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2025 MedRecommender. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

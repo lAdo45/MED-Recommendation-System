@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered Data</title>
+</head>
+<body>
+    <h1>Registered Doctor Data</h1>
+    {% if data %}
+        <ul>
+            {% for doctor in data %}
+                <li>
+                    <strong>Name:</strong> {{ doctor.name }} <br>
+                    <strong>Email:</strong> {{ doctor.email }} <br>
+                    <strong>Phone:</strong> {{ doctor.phone }} <br>
+                    <strong>Experience:</strong> {{ doctor.experience }} years <br>
+                    <strong>Certification ID:</strong> {{ doctor.certification_id }} <br>
+                    <strong>File Path:</strong> {{ doctor.certification_file }} <br>
+                    <hr>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No data found.</p>
+    {% endif %}
+</body>
+</html>
+
+</body>
+</html>

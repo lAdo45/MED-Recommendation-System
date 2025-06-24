@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Integration Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #b392d8, #8ca8d8);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 380px;
+        }
+
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .btn-chat {
+            padding: 12px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            font-size: 16px;
+        }
+
+        .btn-chat:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        .btn-chat:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Bot Integration</h1>
+        <p>Click the button below to chat with our intelligent assistant.</p>
+        <button class="btn-chat" onclick="openBot()">Chat with Bot</button>
+    </div>
+
+    <!-- Botpress Scripts -->
+    <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/03/06/18/20250306180820-I23C0O1N.js"></script>
+
+    <script>
+        function openBot() {
+            window.botpressWebChat.open();
+        }
+
+        window.botpressWebChat.init({
+            botId: 'YOUR_BOT_ID',   // Replace 'YOUR_BOT_ID' with your actual Botpress bot ID
+            hostUrl: 'https://cdn.botpress.cloud',
+            messagingUrl: 'https://cdn.botpress.cloud',
+            hideWidget: false,
+            enableReset: true,
+            showBotAvatar: true,
+            stylesheet: 'https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css',
+            customStylesheet: `
+                :root {
+                    --bp-widget-primary: #4CAF50;
+                    --bp-widget-secondary: #2575fc;
+                    --bp-widget-text: #ffffff;
+                    --bp-widget-background: #6a11cb;
+                    --bp-widget-border-radius: 16px;
+                }
+            `
+        });
+    </script>
+</body>
+</html>

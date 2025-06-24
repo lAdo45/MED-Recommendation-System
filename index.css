@@ -1,0 +1,241 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: #b3d5b3;
+    padding: 10px 20px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: darkgreen;
+    position: absolute; /* Keep logo fixed at the left */
+    left: 20px;
+}
+
+.navdiv ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navdiv ul li {
+    margin: 0 15px;
+}
+
+.navdiv ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.navdiv ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+
+/* Container to Hold Boxes */
+.box-container {
+    display: flex;  /* Flexbox for side-by-side layout */
+    justify-content: center;  /* Centers the boxes */
+    gap: 20px;  /* Space between boxes */
+    flex-wrap: wrap;  /* Ensures responsiveness on smaller screens */
+    padding: 20px;  /* Adds space around */
+}
+
+/* Individual Box Styling */
+.box {
+    background-color: #f8f9fa;  /* Light gray background */
+    padding: 20px;  /* Inner spacing */
+    width: 350px;  /* Set box width */
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);  /* Soft shadow */
+    text-align: center;  /* Centers text */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.box:hover {
+    transform: scale(1.05);  /* Slightly enlarges */
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);  /* Stronger shadow */
+}
+
+/* Heading Styling */
+.box h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00bfa5;  /* Teal color for emphasis */
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+.box p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Box Container Styling */
+.box-container1 {
+    max-width: 850px;  /* Controls width */
+    margin: 50px auto;  /* Centers the box */
+    padding: 30px;  /* Inner spacing */
+    background: linear-gradient(135deg, #e0f7fa, #ffffff); /* Gradient effect */
+    border-radius: 12px;  /* Smooth rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);  /* Soft glow shadow */
+    text-align: left;  /* Align text to the left */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.box-container1:hover {
+    transform: scale(1.02);  /* Slight enlargement effect */
+}
+
+/* Heading Styling */
+.box-container1 h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00796b;  /* Deep teal */
+    margin-bottom: 12px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/* Paragraph Styling */
+.box-container1 p {
+    font-size: 17px;
+
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box-container1 {
+        padding: 20px;
+    }
+
+    .box-container1 h2 {
+        font-size: 24px;
+    }
+
+    .box-container1 p {
+        font-size: 16px;
+    }
+}
+
+
+
+
+/* Styling for the Container */
+.new {
+    max-width: 800px;  /* Limits the width of the section */
+    margin: 30px auto;  /* Centers the box horizontally */
+    padding: 25px;  /* Inner spacing */
+    background-color: #ffffff;  /* White background */
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);  /* Soft shadow effect */
+    text-align: center;  /* Centers text inside */
+    border-left: 6px solid #00bfa5; /* Left border for emphasis */
+}
+
+/* Styling for the Heading */
+.new h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Styling for the Paragraph */
+.new p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Hover Effect */
+.new:hover {
+    transform: scale(1.02);  /* Slightly enlarges the box */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);  /* Stronger shadow on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #222;  /* Dark background */
+    color: white;  /* White text */
+    text-align: center;  /* Centers text */
+    padding: 20px 0;  /* Space above and below */
+    margin-top: 40px;  /* Space from content */
+}
+
+/* Footer Content Container */
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer Text */
+footer p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Social Icons */
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect for Social Icons */
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #00bfa5;  /* Teal effect on hover */
+}
+
+
+.ayurveda-info {
+    background-color: #ffffff; /* Light green background */
+    padding: 20px;
+    margin: 30px 50px;
+    border-radius: 12px;
+    line-height: 1.7;
+    font-family: Arial, sans-serif;
+}
+
+.ayurveda-info h3 {
+    color: #004d40; /* Dark green color */
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.ayurveda-info p {
+    color: #333;
+    font-size: 16px;
+    text-align: justify;
+}
